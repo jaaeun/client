@@ -1,0 +1,115 @@
+<!--주석(comment)입니다-->
+<h1>제목</h1>
+<p>문단</p>
+<!-- <p>다른 문단</p> -->
+<p>또 다른 문단</p>
+<!-- ctrl + / -->
+ <!-- 
+여러 줄 주석
+케케ㅔ켘
+ㅋㅋㅋ켘
+ㅋ캐ㅐ캐
+오늘은 제육 먹었다
+ -->
+<h2> &#128517;</h2>
+ 
+<h2>&#128507;</h2>
+
+ <pre>
+    첫줄
+    둘째줄
+    셋째줄
+ </pre>
+
+ <!--태그명 + tab-->
+ <h1>요소 완성</h1>
+
+ <p>문단1</p>
+ <!--ctrl + enter-->
+ <p>다음 줄 생성</p>
+
+ <!--lorem + 숫자 + 탭-->
+ Lorem, ipsum.
+ Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis, voluptates?
+ Lorem, ipsum. 
+ 의미없는 단어 (숫자 만큼)
+ 
+ <!--alt 화살표 위 아래-->
+ <p>한 줄씩 위 아래로 움직임</p>
+
+ <!--alt 왼쪽 마우스 클릭-->
+ 
+ <p>여러 커서 만들기</p>
+ 
+ <!--ctrl + s-->
+<p>저장</p>
+<div>저장</div>
+<a href="https://www.w3schools.com">Visit W2Schools</a>
+<br>
+<img src="img_girl.jpg" width="300" height="500">
+
+
+<style>
+table, th, td {
+    border:1px solid black;
+  }
+</style>
+
+<table style="width: 100%">
+    <tr>
+      <th>Company</th>
+      <th>Contact</th>
+      <th>Country</th>
+    </tr>
+    <tr>
+      <td>Alfreds Futterkiste</td>
+      <td>Maria Anders</td>
+      <td>Germany</td>
+    </tr>
+    <tr>
+      <td>Centro comercial Moctezuma</td>
+      <td>Francisco Chang</td>
+      <td>Mexico</td>
+    </tr>
+<div>  </div>
+  </table>
+  <br>
+  <h2>&#128509;</h2>
+
+  날짜 선택 : <input type="date">
+
+  <style>
+    #div1 {
+      width: 350px;
+      height: 70px;
+      padding: 10px;
+      border: 1px solid #aaaaaa;
+    }
+    </style>
+    <script>
+    function dragstartHandler(ev) { //이미지를 드래그 할 때 실행
+      ev.dataTransfer.setData("text", ev.target.id);
+    }
+    
+    function dragoverHandler(ev) {
+      ev.preventDefault();
+    }
+    
+    function dropHandler(ev) { //이미지를 드롭할 때 실행 됨
+      ev.preventDefault();
+      const data = ev.dataTransfer.getData("text");
+      ev.target.appendChild(document.getElementById(data));
+    }
+    </script>
+    </head>
+    <body>
+    
+    <h1>Drag and Drop API</h1>
+    
+    <p>Drag the W3Schools image into the rectangle:</p>
+    
+    <div id="div1" ondrop="dropHandler(event)"   ondragover="dragoverHandler(event)"></div>
+    <br>
+    <img id="img1" src="img_logo.gif" draggable="true" ondragstart="dragstartHandler(event)" width="336" height="69">
+    
+    </body>
